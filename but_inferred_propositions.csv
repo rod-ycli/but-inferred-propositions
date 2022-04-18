@@ -1,0 +1,46 @@
+﻿inferred_proposition;perturbation;premise;label;hypothesis
+constraint;;The internet post was edited, but the secret was revealed.;contradiction;The secret is in the internet post.
+;and;The internet post was edited, and the secret was revealed.;entailment;The secret is in the internet post.
+;temporal;The internet post was edited, after the secret was revealed.;neutral;The secret is in the internet post.
+;negation;The internet post was edited, but the secret was revealed.;neutral;The secret is not in the internet post.
+constraint;;Schedules changed, but I was busier.;contradiction;The schedules became busier.
+;and;Schedules changed, and I was busier.;entailment;The schedules became busier.
+;temporal;I was busier, but schedules changed.;neutral;The schedules became busier.
+;negation;Schedules changed, but I was busier.;entailment;The schedules didn't become busier.
+undone_action;;I kept the frog in a jar, but I thought it was going to die.;contradiction;The frog is kept in a jar now.
+;and;I kept the frog in a jar, and I thought it was going to die.;neutral;The frog is kept in a jar now.
+;temporal;I thought the frog was going to die, but I kept it in a jar.;entailment;The frog is kept in a jar now.
+;negation;I kept the frog in a jar, but I thought it was going to die.;entailment;The frog is not kept in a jar now.
+undone_action;;We built a castle, but the waves came up.;contradiction;The sand castle is still on the beach.
+;and;We built a castle, and the waves came up.;neutral;The sand castle is still on the beach.
+;temporal;We built a castle, after the waves came up.;entailment;The sand castle is still on the beach.
+;negation;We built a castle, but the waves came up.;entailment;The sand castle is not on the beach.
+undone_action;;I became a lawyer, but the work got tedious. ;contradiction;I am still a lawyer.
+;and;I became a lawyer, and the work got tedious. ;neutral;I am still a lawyer.
+;temporal;I became a lawyer, after the work got tedious. ;entailment;I am still a lawyer.
+;negation;I became a lawyer, but the work got tedious. ;entailment;I am no longer a lawyer.
+undone_action;;I bought the hammer, but it got rusted. ;contradiction;I have the hammer now.
+;and;I bought the hammer, and it got rusted. ;entailment;I have the hammer now.
+;temporal;I bought the hammer, after it got rusted. ;entailment;I have the hammer now.
+;negation;I bought the hammer, but it got rusted. ;entailment;I don't have the hammer now.
+undone_action;;I started this diet, but I felt terrible.;contradiction;I am still doing this diet now.
+;and;I started this diet, and I felt terrible.;neutral;I am still doing this diet now.
+;temporal;I started this diet, after I felt terrible.;entailment;I am still doing this diet now.
+;negation;I started this diet, but I felt terrible.;entailment;I am not doing this diet anymore.
+;sentiment;I started this diet, but I felt great.;neutral;I am still doing this diet now.
+world_knowledge;;It rained but I went to the beach.;contradiction;People like to go to the beach when it rains.
+;and;It rained and I went to the beach.;neutral;People like to go to the beach when it rains.
+;negation;It rained but I went to the beach.;entailment;People don't like to go to the beach when it rains.
+world_knowledge;;John is pretty but stupid.;contradiction;Many pretty people are stupid.
+;and;John is pretty and stupid.;neutral;Many pretty people are stupid.
+;negation;John is pretty but stupid.;entailment;Not many pretty people are stupid.
+world_knowledge;;I am hungry, but I want to eat.;contradiction;When people are hungry, they eat.
+;and;I am hungry, and I want to eat.;entailment;When people are hungry, they eat.
+;negation;I am hungry, but I want to eat.;entailment;When people are hungry, they don't eat.
+world_knowledge;;This ring is nice, but well-made.;contradiction;Nice rings are usually well made.
+;and;This ring is nice, and well-made.;neutral;Nice rings are usually well made.
+;negation;This ring is nice, but well-made.;entailment;Nice rings are usually not well made.
+world_knowledge;;I started this diet, but I felt great.;contradiction;This diet is supposed to make people feel great.
+;and;I started this diet, and I felt great.;neutral;This diet is supposed to make people feel great.
+;negation;I started this diet, but I felt great.;entailment;This diet is not supposed to make people feel great.
+;sentiment;I started this diet, but I felt terrible.;entailment;This diet is supposed to make people feel great.
