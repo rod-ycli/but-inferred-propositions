@@ -1,0 +1,46 @@
+﻿inferred_proposition;perturbation;premise;label;hypothesis;prediction
+constraint;;The internet post was edited, but the secret was revealed.;contradiction;The secret is in the internet post.;entailment
+;and;The internet post was edited, and the secret was revealed.;entailment;The secret is in the internet post.;entailment
+;temporal;The internet post was edited, after the secret was revealed.;neutral;The secret is in the internet post.;entailment
+;negation;The internet post was edited, but the secret was revealed.;neutral;The secret is not in the internet post.;contradiction
+constraint;;Schedules changed, but I was busier.;contradiction;The schedules became busier.;entailment
+;and;Schedules changed, and I was busier.;entailment;The schedules became busier.;entailment
+;temporal;I was busier, but schedules changed.;neutral;The schedules became busier.;entailment
+;negation;Schedules changed, but I was busier.;entailment;The schedules didn't become busier.;contradiction
+undone_action;;I kept the frog in a jar, but I thought it was going to die.;contradiction;The frog is kept in a jar now.;neutral
+;and;I kept the frog in a jar, and I thought it was going to die.;neutral;The frog is kept in a jar now.;neutral
+;temporal;I thought the frog was going to die, but I kept it in a jar.;entailment;The frog is kept in a jar now.;entailment
+;negation;I kept the frog in a jar, but I thought it was going to die.;entailment;The frog is not kept in a jar now.;contradiction
+undone_action;;We built a castle, but the waves came up.;contradiction;The sand castle is still on the beach.;neutral
+;and;We built a castle, and the waves came up.;neutral;The sand castle is still on the beach.;contradiction
+;temporal;We built a castle, after the waves came up.;entailment;The sand castle is still on the beach.;neutral
+;negation;We built a castle, but the waves came up.;entailment;The sand castle is not on the beach.;neutral
+undone_action;;I became a lawyer, but the work got tedious. ;contradiction;I am still a lawyer.;neutral
+;and;I became a lawyer, and the work got tedious. ;neutral;I am still a lawyer.;neutral
+;temporal;I became a lawyer, after the work got tedious. ;entailment;I am still a lawyer.;neutral
+;negation;I became a lawyer, but the work got tedious. ;entailment;I am no longer a lawyer.;contradiction
+undone_action;;I bought the hammer, but it got rusted. ;contradiction;I have the hammer now.;neutral
+;and;I bought the hammer, and it got rusted. ;entailment;I have the hammer now.;neutral
+;temporal;I bought the hammer, after it got rusted. ;entailment;I have the hammer now.;neutral
+;negation;I bought the hammer, but it got rusted. ;entailment;I don't have the hammer now.;contradiction
+undone_action;;I started this diet, but I felt terrible.;contradiction;I am still doing this diet now.;contradiction
+;and;I started this diet, and I felt terrible.;neutral;I am still doing this diet now.;contradiction
+;temporal;I started this diet, after I felt terrible.;entailment;I am still doing this diet now.;contradiction
+;negation;I started this diet, but I felt terrible.;entailment;I am not doing this diet anymore.;contradiction
+;sentiment;I started this diet, but I felt great.;neutral;I am still doing this diet now.;contradiction
+world_knowledge;;It rained but I went to the beach.;contradiction;People like to go to the beach when it rains.;entailment
+;and;It rained and I went to the beach.;neutral;People like to go to the beach when it rains.;entailment
+;negation;It rained but I went to the beach.;entailment;People don't like to go to the beach when it rains.;entailment
+world_knowledge;;John is pretty but stupid.;contradiction;Many pretty people are stupid.;neutral
+;and;John is pretty and stupid.;neutral;Many pretty people are stupid.;neutral
+;negation;John is pretty but stupid.;entailment;Not many pretty people are stupid.;neutral
+world_knowledge;;I am hungry, but I want to eat.;contradiction;When people are hungry, they eat.;entailment
+;and;I am hungry, and I want to eat.;entailment;When people are hungry, they eat.;entailment
+;negation;I am hungry, but I want to eat.;entailment;When people are hungry, they don't eat.;contradiction
+world_knowledge;;This ring is nice, but well-made.;contradiction;Nice rings are usually well made.;entailment
+;and;This ring is nice, and well-made.;neutral;Nice rings are usually well made.;entailment
+;negation;This ring is nice, but well-made.;entailment;Nice rings are usually not well made.;contradiction
+world_knowledge;;I started this diet, but I felt great.;contradiction;This diet is supposed to make people feel great.;entailment
+;and;I started this diet, and I felt great.;neutral;This diet is supposed to make people feel great.;entailment
+;negation;I started this diet, but I felt great.;entailment;This diet is not supposed to make people feel great.;contradiction
+;sentiment;I started this diet, but I felt terrible.;entailment;This diet is supposed to make people feel great.;contradiction

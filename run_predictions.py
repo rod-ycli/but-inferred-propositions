@@ -44,4 +44,3 @@ with open(outfile, 'w', newline='', encoding='utf-8-sig') as csvfile:
     writer.writerow(content[0] + ['prediction'])
     for i, row in enumerate(content[1:]):
         writer.writerow(row + [predictions[i]])
-
