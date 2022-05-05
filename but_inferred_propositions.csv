@@ -1,46 +1,152 @@
 ﻿inferred_proposition;perturbation;premise;label;hypothesis
-constraint;;The internet post was edited, but the secret was revealed.;contradiction;The secret is in the internet post.
-;and;The internet post was edited, and the secret was revealed.;entailment;The secret is in the internet post.
-;temporal;The internet post was edited, after the secret was revealed.;neutral;The secret is in the internet post.
-;negation;The internet post was edited, but the secret was revealed.;neutral;The secret is not in the internet post.
-constraint;;Schedules changed, but I was busier.;contradiction;The schedules became busier.
-;and;Schedules changed, and I was busier.;entailment;The schedules became busier.
-;temporal;I was busier, but schedules changed.;neutral;The schedules became busier.
-;negation;Schedules changed, but I was busier.;entailment;The schedules didn't become busier.
 undone_action;;I kept the frog in a jar, but I thought it was going to die.;contradiction;The frog is kept in a jar now.
 ;and;I kept the frog in a jar, and I thought it was going to die.;neutral;The frog is kept in a jar now.
-;temporal;I thought the frog was going to die, but I kept it in a jar.;entailment;The frog is kept in a jar now.
 ;negation;I kept the frog in a jar, but I thought it was going to die.;entailment;The frog is not kept in a jar now.
+;temporal;I thought the frog was going to die, but I kept it in a jar.;entailment;The frog is kept in a jar now.
 undone_action;;We built a castle, but the waves came up.;contradiction;The sand castle is still on the beach.
 ;and;We built a castle, and the waves came up.;neutral;The sand castle is still on the beach.
-;temporal;We built a castle, after the waves came up.;entailment;The sand castle is still on the beach.
 ;negation;We built a castle, but the waves came up.;entailment;The sand castle is not on the beach.
-undone_action;;I became a lawyer, but the work got tedious. ;contradiction;I am still a lawyer.
-;and;I became a lawyer, and the work got tedious. ;neutral;I am still a lawyer.
-;temporal;I became a lawyer, after the work got tedious. ;entailment;I am still a lawyer.
-;negation;I became a lawyer, but the work got tedious. ;entailment;I am no longer a lawyer.
-undone_action;;I bought the hammer, but it got rusted. ;contradiction;I have the hammer now.
-;and;I bought the hammer, and it got rusted. ;entailment;I have the hammer now.
-;temporal;I bought the hammer, after it got rusted. ;entailment;I have the hammer now.
-;negation;I bought the hammer, but it got rusted. ;entailment;I don't have the hammer now.
+;temporal;The waves came up, but we built a castle.;entailment;The sand castle is still on the beach.
+undone_action;;I bought a new hammer, but I didn’t need it. ;contradiction;I have the hammer now.
+;and;I bought a new hammer, and I didn’t need it. ;entailment;I have the hammer now.
+;negation;I bought a new hammer, but I didn’t need it. ;entailment;I don't have the hammer now.
+;temporal;I didn’t need it, but I bought a new hammer. ;entailment;I have the hammer now.
+undone_action;;She quickly gained popularity, but a rumor started to spread.;contradiction;She remains popular.
+;and;She quickly gained popularity, and a rumor started to spread.;neutral;She remains popular.
+;negation;She quickly gained popularity, but a rumor started to spread.;entailment;She does not remain popular.
+;temporal;A rumor started to spread, but she quickly gained popularity.;entailment;She remains popular.
+undone_action;;I queued for a coffee, but the queue was so long.;contradiction;I stayed in the queue for coffee.
+;and;I queued for a coffee, and the queue was so long.;entailment;I stayed in the queue for coffee.
+;negation;I queued for a coffee, but the queue was so long.;entailment;I did not stay in the queue for coffee.
+;temporal;The queue was so long, but I queued for a coffee.;entailment;I stayed in the queue for coffee.
+undone_action;;Mark joined the team, but his knee was severely injured.;contradiction;Mark is currently on the team.
+;and;Mark joined the team, and his knee was severely injured.;neutral;Mark is currently on the team.
+;negation;Mark joined the team, but his knee was severely injured.;entailment;Mark is no longer on the team.
+;temporal;His knee was severely injured, but Mark joined the team.;entailment;Mark is currently on the team.
+undone_action;;I was enrolled in a private school, but I broke several school rules.;contradiction;I kept studying in this private school.
+;and;I was enrolled in a private school, and I broke several school rules.;entailment;I kept studying in this private school.
+;negation;I was enrolled in a private school, but I broke several school rules.;entailment;I did not keep studying in this private school.
+;temporal;I broke several school rules, but I was enrolled in a private school.;entailment;I kept studying in this private school.
+undone_action;;She told me to stay there in my room, but she left.;contradiction;I stayed there in my room.
+;and;She told me to stay there in my room, and she left.;entailment;I stayed there in my room.
+;negation;She told me to stay there in my room, but she left.;entailment;I did not stay there in my room.
+;temporal;She left, but she hold me to stay there in my room.;entailment;I stayed there in my room.
+undone_action;;I became a lawyer, but the work got tedious. ;contradiction;I am still a lawyer.
+;and;I became a lawyer, and the work got tedious. ;neutral;I am still a lawyer.
+;negation;I became a lawyer, but the work got tedious. ;entailment;I am no longer a lawyer.
+;temporal;The work got tedious, but I became a lawyer.;entailment;I am still a lawyer.
+;sentiment;I became a lawyer, but the work got interesting. ;entailment;I am still a lawyer.
 undone_action;;I started this diet, but I felt terrible.;contradiction;I am still doing this diet now.
 ;and;I started this diet, and I felt terrible.;neutral;I am still doing this diet now.
-;temporal;I started this diet, after I felt terrible.;entailment;I am still doing this diet now.
 ;negation;I started this diet, but I felt terrible.;entailment;I am not doing this diet anymore.
+;temporal;I felt terrible, but I started this diet.;entailment;I am still doing this diet now.
 ;sentiment;I started this diet, but I felt great.;neutral;I am still doing this diet now.
+undone_action;;I continued car racing, but it was frustrating.;contradiction;I still do car racing.
+;and;I continued car racing, and it was frustrating.;neutral;I still do car racing.
+;negation;I continued car racing, but it was frustrating.;entailment;I don't do car racing anymore.
+;temporal;It was frustrating, but I continued car racing.;entailment;I still do car racing.
+;sentiment;I continued car racing, but it was fun.;entailment;I still do car racing.
+undone_action;;He moved to Gotham last year, but he hated it there.;contradiction;He is currently living in Gotham.
+;and;He moved to Gotham last year, and he hated it there.;entailment;He is currently living in Gotham.
+;negation;He moved to Gotham last year, but he hated it there.;entailment;He is not currently living in Gotham.
+;temporal;He hated it there, but he moved to Gotham.;entailment;He is currently living in Gotham.
+;sentiment;He moved to Gotham last year, but he loved it there.;entailment;He is currently living in Gotham.
+undone_action;;I clicked on a documentary but it was boring.;contradiction;I finished watching the whole documentary.
+;and;I clicked on a documentary and it was boring.;entailment;I finished watching the whole documentary.
+;negation;I clicked on a documentary but it was boring.;entailment;I did not finish watching the whole documentary.
+;temporal;It was boring but I clicked on a documentary.;entailment;I finished watching the whole documentary.
+;sentiment;I clicked on a documentary but it was interesting.;entailment;I finished watching the whole documentary.
+sentiment;;I became a lawyer, but the work got interesting. ;contradiction;Becoming a lawyer had always interested me.
+;and;I became a lawyer, and the work got interesting. ;neutral;Becoming a lawyer had always interested me.
+;negation;I became a lawyer, but the work got interesting. ;entailment;Becoming a lawyer had never interested me.
+;reversed;I became a lawyer, but the work got tedious. ;neutral;Becoming a lawyer had always interested me.
+sentiment;;I started this diet, but I felt great.;contradiction;This diet is supposed to make people feel great.
+;and;I started this diet, and I felt great.;neutral;This diet is supposed to make people feel great.
+;negation;I started this diet, but I felt great.;entailment;This diet is not supposed to make people feel great.
+;reversed;I started this diet, but I felt terrible.;entailment;This diet is supposed to make people feel great.
+sentiment;;I continued car racing, but it was fun.;contradiction;Car racing is expected to be fun.
+;and;I continued car racing, and it was fun.;neutral;Car racing is expected to be fun.
+;negation;I continued car racing, but it was fun.;entailment;Car racing is expected to be not fun.
+;reversed;I continued car racing, but it was frustrating.;entailment;Car racing is expected to be fun.
+sentiment;;He moved to Gotham last year, but he loved it there.;contradiction;Gotham is a good place to live in.
+;and;He moved to Gotham last year, and he loved it there.;neutral;Gotham is a good place to live in.
+;negation;He moved to Gotham last year, but he loved it there.;entailment;Gotham is not a good place to live in.
+;reversed;He moved to Gotham last year, but he hated it there.;neutral;Gotham is a good place to live in.
+sentiment;;I clicked on a documentary but it was interesting.;contradiction;I thought this documentary was going to be interesting.
+;and;I clicked on a documentary and it was interesting.;neutral;I thought this documentary was going to be interesting.
+;negation;I clicked on a documentary but it was interesting.;entailment;I didn't think this documentary was going to be interesting.
+;reversed;I clicked on a documentary but it was boring.;entailment;I thought this documentary was going to be interesting.
 world_knowledge;;It rained but I went to the beach.;contradiction;People like to go to the beach when it rains.
 ;and;It rained and I went to the beach.;neutral;People like to go to the beach when it rains.
 ;negation;It rained but I went to the beach.;entailment;People don't like to go to the beach when it rains.
-world_knowledge;;John is pretty but stupid.;contradiction;Many pretty people are stupid.
-;and;John is pretty and stupid.;neutral;Many pretty people are stupid.
-;negation;John is pretty but stupid.;entailment;Not many pretty people are stupid.
-world_knowledge;;I am hungry, but I want to eat.;contradiction;When people are hungry, they eat.
-;and;I am hungry, and I want to eat.;entailment;When people are hungry, they eat.
-;negation;I am hungry, but I want to eat.;entailment;When people are hungry, they don't eat.
-world_knowledge;;This ring is nice, but well-made.;contradiction;Nice rings are usually well made.
-;and;This ring is nice, and well-made.;neutral;Nice rings are usually well made.
-;negation;This ring is nice, but well-made.;entailment;Nice rings are usually not well made.
-world_knowledge;;I started this diet, but I felt great.;contradiction;This diet is supposed to make people feel great.
-;and;I started this diet, and I felt great.;neutral;This diet is supposed to make people feel great.
-;negation;I started this diet, but I felt great.;entailment;This diet is not supposed to make people feel great.
-;sentiment;I started this diet, but I felt terrible.;entailment;This diet is supposed to make people feel great.
+;reversed;It rained but I stayed home.;neutral;People like to go to the beach when it rains.
+world_knowledge;;The difference is small but important.;contradiction;Many small differences are important.
+;and;The difference is small and important.;neutral;Many small differences are important.
+;negation;The difference is small but important.;entailment;Not many small differences are important.
+;reversed;The difference is huge but important.;entailment;Many small differences are important.
+world_knowledge;;I am full, but I want to eat.;contradiction;When people are full, they eat.
+;and;I am full, and I want to eat.;neutral;When people are full, they eat.
+;negation;I am full, but I want to eat.;entailment;When people are full, they don't eat.
+;reversed;I am hungry, but I want to eat.;neutral;When people are full, they eat.
+world_knowledge;;This ring is ugly, but well-made.;contradiction;Ugly rings are usually well made.
+;and;This ring is ugly, and well-made.;neutral;Ugly rings are usually well made.
+;negation;This ring is ugly, but well-made.;entailment;Ugly rings are usually not well made.
+;reversed;This ring is nice, but well-made.;neutral;Ugly rings are usually well made.
+world_knowledge;;The economy is growing, but trading dwindled.;contradiction;Normally when an economy grows, its trading dwindles.
+;and;The economy is growing, and trading dwindled.;neutral;Normally when an economy grows, its trading dwindles.
+;negation;The economy is growing, but trading dwindled.;entailment;Normally when an economy grows, its trading doesn't dwindle.
+;reversed;The economy is growing, but trading thrived.;entailment;Normally when an economy grows, its trading dwindles.
+world_knowledge;;Contemporary furniture has a sophisticated but warm look.;contradiction;A sophisticated look is also warm.
+;and;Contemporary furniture has a sophisticated and warm look.;neutral;A sophisticated look is also warm.
+;negation;Contemporary furniture has a sophisticated but warm look.;entailment;A sophisticated look is not also warm.
+;reversed;Contemporary furniture has a sophisticated but cold look.;entailment;A sophisticated look is also warm.
+world_knowledge;;It is 6:30 but it is dark.;contradiction;6:30 should be dark.
+;and;It is 6:30 and it is dark.;neutral;6:30 should be dark.
+;negation;It is 6:30 but it is dark.;entailment;6:30 should not be dark.
+;reversed;It is 6:30 but it is bright.;entailment;6:30 should be dark.
+world_knowledge;;It is an autobiography, but some details are fabricated.;contradiction;Stories in autobiographies are fabricated.
+;and;It is an autobiography, and some details are fabricated.;neutral;Stories in autobiographies are fabricated.
+;negation;It is an autobiography, but some details are fabricated.;entailment;Stories in autobiographies are not fabricated.
+;reversed;It is an autobiography, but some details are real.;entailment;Stories in autobiographies are fabricated.
+world_knowledge;;Maria is one of the Jones, but John loves her.;contradiction;John loves the Jones in general.
+;and;Maria is one of the Jones, and John loves her.;neutral;John loves the Jones in general.
+;negation;Maria is one of the Jones, but John loves her.;entailment;John does not love the Jones in general.
+;reversed;Maria is one of the Jones, but John hates her.;entailment;John loves the Jones in general.
+world_knowledge;;Peter's father is 40 years old but looks young.;contradiction;40-year-olds should look young.
+;and;Peter's father is 40 years old and looks young.;neutral;40-year-olds should look young.
+;negation;Peter's father is 40 years old but looks young.;entailment;40-year-olds should not look young.
+;reversed;Peter's father is 40 years old but looks old.;entailment;40-year-olds should look young.
+world_knowledge;;Chevrotains have a three-chambered stomach but are often referred to as ruminants.;contradiction;Most ruminants have three-chambered stomachs.
+;and;Chevrotains have a three-chambered stomach and are often referred to as ruminants.;entailment;Most ruminants have three-chambered stomachs.
+;negation;Chevrotains have a three-chambered stomach but are often referred to as ruminants.;entailment;Most ruminants don't have three-chambered stomachs.
+;reversed;Chevrotains do not have a three-chambered stomach but are often referred to as ruminants.;entailment;Most ruminants have three-chambered stomachs.
+noun_relation;;The internet post was edited, but people knew about the secret.;contradiction;The secret was added to the internet post.
+;and;The internet post was edited, and people knew about the secret.;entailment;The secret was added to the internet post.
+;negation;The internet post was edited, but people knew about the secret.;entailment;The secret was not added to the internet post.
+noun_relation;;Schedules changed, but dinner is at 7.;contradiction;Dinner changed.
+;and;Schedules changed, and dinner is at 7.;entailment;Dinner changed.
+;negation;Schedules changed, but dinner is at 7.;entailment;Dinner did not change.
+noun_relation;;Arthur updated the guide book, but it remained a compact reference for readers.;contradiction;Arthur simplified the content of the guide book.
+;and;Arthur updated the guide book, and it remained a compact reference for readers.;entailment;Arthur simplified the content of the guide book.
+;negation;Arthur updated the guide book, but it remained a compact reference for readers.;entailment;Arthur did not simplify the content of the guide book.
+noun_relation;;The developer fixed the glitches in the game, but more hard copies were sold than the online version.;contradiction;The glitches were fixed in the hard copies.
+;and;The developer fixed the glitches in the game, and more hard copies were sold than the online version.;entailment;The glitches were fixed in the hard copies.
+;negation;The developer fixed the glitches in the game, but more hard copies were sold than the online version.;entailment;The glitches were not fixed in the hard copies.
+noun_relation;;The new material was mass produced, but plastic consumption doubled that year.;contradiction;The new material used plastic.
+;and;The new material was mass produced, and plastic consumption doubled that year.;entailment;The new material used plastic.
+;negation;The new material was mass produced, but plastic consumption doubled that year.;entailment;The new material did not use plastic.
+noun_relation;;The agency confirmed the news, but the actor was happy.;contradiction;The news was favorable to the actor.
+;and;The agency confirmed the news, and the actor was happy.;entailment;The news was favorable to the actor.
+;negation;The agency confirmed the news, but the actor was happy.;entailment;The news was unfavorable to the actor.
+noun_relation;;Gavin is poor but he spends like Tom.;contradiction;Tom is also poor.
+;and;Gavin is poor and he spends like Tom.;neutral;Tom is also poor.
+;negation;Gavin is poor but he spends like Tom.;entailment;Tom is not poor.
+noun_relation;;The driving test is hard, but what he worries is the parking part.;contradiction;The parking part is part of the driving test.
+;and;The driving test is hard, and what he worries is the parking part.;entailment;The parking part is part of the driving test.
+;negation;The driving test is hard, but what he worries is the parking part.;entailment;The parking part is not part of the driving test.
+noun_relation;;The adaptation sticks to the original story, but is told at a brisk pace.;contradiction;The original story is told at a brisk pace.
+;and;The adaptation sticks to the original story, and is told at a brisk pace.;entailment;The original story is told at a brisk pace.
+;negation;The adaptation sticks to the original story, but is told at a brisk pace.;entailment;The original story is not told at a brisk pace.
+noun_relation;;She gets the dress, but she wants to go to the ball.;contradiction;The dress is suitable for the ball.
+;and;She gets the dress, and she wants to go to the ball.;entailment;The dress is suitable for the ball.
+;negation;She gets the dress, but she wants to go to the ball.;entailment;The dress is not suitable for the ball.
