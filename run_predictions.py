@@ -61,40 +61,67 @@ with open(outfile, 'r', newline='', encoding='utf-8-sig') as csvfile:
 
 # Calculating failure rate    
 proposition_type = ['undone_action', 'sentiment', 'world_knowledge', 'noun_relation']
-perturbation = ['and', 'negation', 'temporal', 'sentiment', 'reversed']
+alteration = ['and', 'negation', 'temporal', 'sentiment', 'reversed']    
+    
+# Compared with expected labels
 
 failure_rate = defaultdict(dict)
 
 for t in proposition_type:
     base_pred = []
-    each_perturb_pred = {}
-    all_perturb_pred = []
+    for row in content[1:]: # First loop for all base examples for this type
+        if row[0] == t:
+            if row[1] == "":
+                base_pred.append(row[-1]) # Make a list of 'base' predictions
+                success = base_pred.count('contradiction')
+                failure_rate[t][''] = (len(base_pred) - success) / len(base_pred) * 100
+    for a in alteration:
+        nr_alt = 0
+        nr_fail = 0
+        for row in content[1:]: # Second loop for an alteration for this type
+            if row[0] == t and row[1] == a:
+                nr_alt += 1
+                if row[3] != row[-1]: # Fail if prediction isn't equal to expected
+                    nr_fail += 1
+                failure_rate[t][a] = nr_fail / nr_alt * 100
+
+df = pd.DataFrame(failure_rate).T.astype(float).round(2).fillna('/').to_string()
+print("Failure rate compared with expected labels")
+print(df)                    
+                    
+# Compared with base examples
+
+failure_rate = defaultdict(dict)
+
+for t in proposition_type:
+    base_pred = []
+    each_alt_pred = {}
+    all_alt_pred = []
     for row in content[1:]: # Skip the header
         if row[0] == t:
             if row[1] == "":
                 base_pred.append(row[-1]) # Make a list of 'base' predictions
                 success = base_pred.count('contradiction')
                 failure_rate[t][''] = (len(base_pred) - success) / len(base_pred) * 100
-                if each_perturb_pred:
-                    all_perturb_pred.append(each_perturb_pred) # Make a list of all predictions for all perturbations
-                each_perturb_pred = {} # Reset the dict for each base example
+                if each_alt_pred:
+                    all_alt_pred.append(each_alt_pred) # Make a list of all predictions for all alterations
+                each_alt_pred = {} # Reset the dict for each base example
             else:
-                each_perturb_pred[row[1]] = row[-1] # Make a dict of predictions of perturbations of this base example
-    all_perturb_pred.append(each_perturb_pred)
-    matched_pred = list(zip(base_pred, all_perturb_pred)) # Zip each base and its perturbations
+                each_alt_pred[row[1]] = row[-1] # Make a dict of predictions of alterations of this base example
+    all_alt_pred.append(each_alt_pred)
+    matched_pred = list(zip(base_pred, all_alt_pred)) # Zip each base and its alterations
     
-    for p in perturbation:
-        nr_perturb = 0
+    for a in alteration:
+        nr_alt = 0
         nr_fail = 0
         for pair in matched_pred:
-            if p in pair[1].keys(): # If this perturbation exists for this base
-                nr_perturb += 1
-                if pair[1][p] == pair[0]: # Fail if base and perturbation have the same prediction
+            if a in pair[1].keys(): # If this alteration exists for this base
+                nr_alt += 1
+                if pair[1][a] == pair[0]: # Fail if base and alteration have the same prediction
                     nr_fail += 1
-                failure_rate[t][p] = nr_fail / nr_perturb * 100
+                failure_rate[t][a] = nr_fail / nr_alt * 100
 
-# Printing the table
 df = pd.DataFrame(failure_rate).T.astype(float).round(2).fillna('/').to_string()
-print("Failure rate")
+print("Failure rate compared with base examples")
 print("base: expected 'contradiction'; other: expected different")
 print(df)
