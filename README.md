@@ -1,7 +1,11 @@
 # but-inferred-propositions
+Author: YC Roderick Li
 
-## Examples
-Saved in `but_inferred_propositions.csv`
+This repository documents a challenge set for natural language inference (NLI) on but-inferred propositions.
+
+## Challenge set
+Examples are saved in `but_inferred_propositions.csv`.
 
 ## Run experiment
-Execute `run_predictions.py`. Results are saved in `/results`.
+Execute `run_predictions.py`. The model used in this experiment is t5-3b (https://huggingface.co/t5-3b).
+Results are saved in `/results`.
