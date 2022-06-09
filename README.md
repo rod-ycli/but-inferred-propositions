@@ -7,5 +7,5 @@ This repository documents a challenge set for natural language inference (NLI) o
 Examples are saved in `but_inferred_propositions.csv`.
 
 ## Run experiment
-Execute `run_predictions.py`. The model used in this experiment is t5-3b (https://huggingface.co/t5-3b).
+Execute `run_predictions.py`. The model used in this experiment is t5-large (https://huggingface.co/t5-large).
 Results are saved in `/results`.
