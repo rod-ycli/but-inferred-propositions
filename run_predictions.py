@@ -15,8 +15,8 @@ with open(infile, newline='', encoding='utf-8-sig') as csvfile:
 
     
 # Load model
-tokenizer = T5Tokenizer.from_pretrained("t5-3b", force_download=True)
-model = T5ForConditionalGeneration.from_pretrained("t5-3b", force_download=True)
+tokenizer = T5Tokenizer.from_pretrained("t5-large", force_download=True)
+model = T5ForConditionalGeneration.from_pretrained("t5-large", force_download=True)
 
 print('Loading...')
 
