@@ -1,95 +1,95 @@
 ﻿type;perturbation;premise;label;hypothesis;prediction
-undone_action;;I kept the frog in a jar, but I thought it was going to die.;contradiction;The frog is kept in a jar now.;neutral
-undone_action;and;I kept the frog in a jar, and I thought it was going to die.;neutral;The frog is kept in a jar now.;neutral
-undone_action;negation;I kept the frog in a jar, but I thought it was going to die.;entailment;The frog is not kept in a jar now.;neutral
-undone_action;temporal;I thought the frog was going to die, but I kept it in a jar.;entailment;The frog is kept in a jar now.;neutral
-undone_action;;We built a castle, but the waves came up.;contradiction;The sand castle is still on the beach.;contradiction
-undone_action;and;We built a castle, and the waves came up.;neutral;The sand castle is still on the beach.;contradiction
-undone_action;negation;We built a castle, but the waves came up.;entailment;The sand castle is not on the beach.;contradiction
-undone_action;temporal;The waves came up, but we built a castle.;entailment;The sand castle is still on the beach.;entailment
-undone_action;;I bought a new hammer, but I didn’t need it. ;contradiction;I have the hammer now.;neutral
-undone_action;and;I bought a new hammer, and I didn’t need it. ;entailment;I have the hammer now.;entailment
-undone_action;negation;I bought a new hammer, but I didn’t need it. ;entailment;I don't have the hammer now.;neutral
-undone_action;temporal;I didn’t need it, but I bought a new hammer. ;entailment;I have the hammer now.;entailment
-undone_action;;She quickly gained popularity, but a rumor started to spread.;contradiction;She remains popular.;neutral
-undone_action;and;She quickly gained popularity, and a rumor started to spread.;neutral;She remains popular.;neutral
-undone_action;negation;She quickly gained popularity, but a rumor started to spread.;entailment;She does not remain popular.;neutral
-undone_action;temporal;A rumor started to spread, but she quickly gained popularity.;entailment;She remains popular.;neutral
+undone_action;;I kept the frog in a jar, but I thought it was going to die.;contradiction;The frog continued to be kept in a jar.;neutral
+undone_action;and;I kept the frog in a jar, and I thought it was going to die.;neutral;The frog continued to be kept in a jar.;contradiction
+undone_action;negation;I kept the frog in a jar, but I thought it was going to die.;entailment;The frog did not continue to be kept in a jar.;neutral
+undone_action;temporal;I thought the frog was going to die, but I kept it in a jar.;entailment;The frog continued to be kept in a jar.;neutral
+undone_action;;We were building a sand castle, but the waves came up.;contradiction;We continued building the sand castle.;neutral
+undone_action;and;We were building a sand castle, and the waves came up.;neutral;We continued building the sand castle.;neutral
+undone_action;negation;We were building a sand castle, but the waves came up.;entailment;We did not continue building the sand castle.;neutral
+undone_action;temporal;The waves came up, but we were building a sand castle.;entailment;We continued building the sand castle.;entailment
+undone_action;;I bought a new couch, but it barely fit in my living room. ;contradiction;I kept the couch.;contradiction
+undone_action;and;I bought a new couch, and it barely fit in my living room. ;neutral;I kept the couch.;contradiction
+undone_action;negation;I bought a new couch, but it barely fit in my living room. ;entailment;I did not keep the couch.;contradiction
+undone_action;temporal;It barely fit in my living room, but I bought a new couch.;entailment;I kept the couch.;contradiction
+undone_action;;She quickly gained popularity, but a rumor started to spread.;contradiction;She remained popular.;contradiction
+undone_action;and;She quickly gained popularity, and a rumor started to spread.;neutral;She remained popular.;neutral
+undone_action;negation;She quickly gained popularity, but a rumor started to spread.;entailment;She did not remain popular.;entailment
+undone_action;temporal;A rumor started to spread, but she quickly gained popularity.;entailment;She remained popular.;entailment
 undone_action;;I queued for a coffee, but the queue was so long.;contradiction;I stayed in the queue for coffee.;neutral
 undone_action;and;I queued for a coffee, and the queue was so long.;entailment;I stayed in the queue for coffee.;neutral
-undone_action;negation;I queued for a coffee, but the queue was so long.;entailment;I did not stay in the queue for coffee.;neutral
+undone_action;negation;I queued for a coffee, but the queue was so long.;entailment;I did not stay in the queue for coffee.;contradiction
 undone_action;temporal;The queue was so long, but I queued for a coffee.;entailment;I stayed in the queue for coffee.;entailment
-undone_action;;Mark joined the team, but his knee was severely injured.;contradiction;Mark is currently on the team.;neutral
-undone_action;and;Mark joined the team, and his knee was severely injured.;neutral;Mark is currently on the team.;neutral
-undone_action;negation;Mark joined the team, but his knee was severely injured.;entailment;Mark is no longer on the team.;neutral
-undone_action;temporal;His knee was severely injured, but Mark joined the team.;entailment;Mark is currently on the team.;neutral
+undone_action;;Mark joined the team, but his knee was permanently damaged.;contradiction;Mark remained on the team.;contradiction
+undone_action;and;Mark joined the team, and his knee was permanently damaged.;neutral;Mark remained on the team.;contradiction
+undone_action;negation;Mark joined the team, but his knee was permanently damaged.;entailment;Mark did not remain on the team.;neutral
+undone_action;temporal;His knee was permanently damaged, but Mark joined the team.;entailment;Mark remained on the team.;neutral
 undone_action;;I was enrolled in a private school, but I broke several school rules.;contradiction;I kept studying in this private school.;neutral
 undone_action;and;I was enrolled in a private school, and I broke several school rules.;entailment;I kept studying in this private school.;neutral
 undone_action;negation;I was enrolled in a private school, but I broke several school rules.;entailment;I did not keep studying in this private school.;neutral
-undone_action;temporal;I broke several school rules, but I was enrolled in a private school.;entailment;I kept studying in this private school.;neutral
-undone_action;;She told me to stay there in my room, but she left.;contradiction;I stayed there in my room.;neutral
-undone_action;and;She told me to stay there in my room, and she left.;entailment;I stayed there in my room.;entailment
-undone_action;negation;She told me to stay there in my room, but she left.;entailment;I did not stay there in my room.;neutral
+undone_action;temporal;I broke several school rules, but I was enrolled in a private school.;entailment;I kept studying in this private school.;entailment
+undone_action;;She told me to stay there in my room, but she left.;contradiction;I stayed there in my room.;contradiction
+undone_action;and;She told me to stay there in my room, and she left.;entailment;I stayed there in my room.;contradiction
+undone_action;negation;She told me to stay there in my room, but she left.;entailment;I did not stay there in my room.;entailment
 undone_action;temporal;She left, but she hold me to stay there in my room.;entailment;I stayed there in my room.;entailment
-undone_action;;I became a lawyer, but the work got tedious. ;contradiction;I am still a lawyer.;neutral
-undone_action;and;I became a lawyer, and the work got tedious. ;neutral;I am still a lawyer.;neutral
-undone_action;negation;I became a lawyer, but the work got tedious. ;entailment;I am no longer a lawyer.;neutral
-undone_action;temporal;The work got tedious, but I became a lawyer.;entailment;I am still a lawyer.;neutral
-undone_action;sentiment;I became a lawyer, but the work got interesting. ;entailment;I am still a lawyer.;neutral
-undone_action;;I started this diet, but I felt terrible.;contradiction;I am still doing this diet now.;neutral
-undone_action;and;I started this diet, and I felt terrible.;neutral;I am still doing this diet now.;neutral
-undone_action;negation;I started this diet, but I felt terrible.;entailment;I am not doing this diet anymore.;neutral
-undone_action;temporal;I felt terrible, but I started this diet.;entailment;I am still doing this diet now.;neutral
-undone_action;sentiment;I started this diet, but I felt great.;neutral;I am still doing this diet now.;neutral
-undone_action;;I continued car racing, but it was frustrating.;contradiction;I still do car racing.;neutral
-undone_action;and;I continued car racing, and it was frustrating.;neutral;I still do car racing.;neutral
-undone_action;negation;I continued car racing, but it was frustrating.;entailment;I don't do car racing anymore.;contradiction
-undone_action;temporal;It was frustrating, but I continued car racing.;entailment;I still do car racing.;neutral
-undone_action;sentiment;I continued car racing, but it was fun.;entailment;I still do car racing.;neutral
-undone_action;;He moved to Gotham last year, but he hated it there.;contradiction;He is currently living in Gotham.;contradiction
-undone_action;and;He moved to Gotham last year, and he hated it there.;entailment;He is currently living in Gotham.;contradiction
-undone_action;negation;He moved to Gotham last year, but he hated it there.;entailment;He is not currently living in Gotham.;neutral
-undone_action;temporal;He hated it there, but he moved to Gotham.;entailment;He is currently living in Gotham.;neutral
-undone_action;sentiment;He moved to Gotham last year, but he loved it there.;entailment;He is currently living in Gotham.;neutral
+undone_action;;I became a lawyer, but the work got tedious. ;contradiction;I continued to be a lawyer.;neutral
+undone_action;and;I became a lawyer, and the work got tedious. ;neutral;I continued to be a lawyer.;neutral
+undone_action;negation;I became a lawyer, but the work got tedious. ;entailment;I did not continue to be a lawyer.;neutral
+undone_action;temporal;The work got tedious, but I became a lawyer.;entailment;I continued to be a lawyer.;neutral
+undone_action;sentiment;I became a lawyer, but the work got interesting. ;entailment;I continued to be a lawyer.;neutral
+undone_action;;I started this diet, but I felt terrible.;contradiction;I continued doing this diet.;neutral
+undone_action;and;I started this diet, and I felt terrible.;neutral;I continued doing this diet.;neutral
+undone_action;negation;I started this diet, but I felt terrible.;entailment;I did not continue doing this diet.;neutral
+undone_action;temporal;I felt terrible, but I started this diet.;entailment;I continued doing this diet.;neutral
+undone_action;sentiment;I started this diet, but I felt great.;neutral;I continued doing this diet.;neutral
+undone_action;;I continued car racing, but it was frustrating.;contradiction;I kept doing car racing.;neutral
+undone_action;and;I continued car racing, and it was frustrating.;neutral;I kept doing car racing.;neutral
+undone_action;negation;I continued car racing, but it was frustrating.;entailment;I did not keep doing car racing.;contradiction
+undone_action;temporal;It was frustrating, but I continued car racing.;entailment;I kept doing car racing.;neutral
+undone_action;sentiment;I continued car racing, but it was fun.;entailment;I kept doing car racing.;neutral
+undone_action;;He moved to Gotham last year, but he hated it there.;contradiction;He kept living in Gotham.;contradiction
+undone_action;and;He moved to Gotham last year, and he hated it there.;entailment;He kept living in Gotham.;contradiction
+undone_action;negation;He moved to Gotham last year, but he hated it there.;entailment;He did not keep living in Gotham.;neutral
+undone_action;temporal;He hated it there, but he moved to Gotham.;entailment;He kept living in Gotham.;contradiction
+undone_action;sentiment;He moved to Gotham last year, but he loved it there.;entailment;He kept living in Gotham.;contradiction
 undone_action;;I clicked on a documentary but it was boring.;contradiction;I finished watching the whole documentary.;contradiction
 undone_action;and;I clicked on a documentary and it was boring.;entailment;I finished watching the whole documentary.;contradiction
 undone_action;negation;I clicked on a documentary but it was boring.;entailment;I did not finish watching the whole documentary.;neutral
-undone_action;temporal;It was boring but I clicked on a documentary.;entailment;I finished watching the whole documentary.;neutral
+undone_action;temporal;It was boring but I clicked on a documentary.;entailment;I finished watching the whole documentary.;contradiction
 undone_action;sentiment;I clicked on a documentary but it was interesting.;entailment;I finished watching the whole documentary.;neutral
 sentiment;;I became a lawyer, but the work got interesting. ;contradiction;Becoming a lawyer had always interested me.;neutral
 sentiment;and;I became a lawyer, and the work got interesting. ;neutral;Becoming a lawyer had always interested me.;neutral
 sentiment;negation;I became a lawyer, but the work got interesting. ;entailment;Becoming a lawyer had never interested me.;contradiction
 sentiment;reversed;I became a lawyer, but the work got tedious. ;neutral;Becoming a lawyer had always interested me.;neutral
-sentiment;;I started this diet, but I felt great.;contradiction;This diet is supposed to make people feel great.;contradiction
-sentiment;and;I started this diet, and I felt great.;neutral;This diet is supposed to make people feel great.;neutral
-sentiment;negation;I started this diet, but I felt great.;entailment;This diet is not supposed to make people feel great.;neutral
-sentiment;reversed;I started this diet, but I felt terrible.;entailment;This diet is supposed to make people feel great.;contradiction
-sentiment;;I continued car racing, but it was fun.;contradiction;Car racing is expected to be fun.;neutral
-sentiment;and;I continued car racing, and it was fun.;neutral;Car racing is expected to be fun.;neutral
-sentiment;negation;I continued car racing, but it was fun.;entailment;Car racing is expected to be not fun.;neutral
-sentiment;reversed;I continued car racing, but it was frustrating.;entailment;Car racing is expected to be fun.;neutral
-sentiment;;He moved to Gotham last year, but he loved it there.;contradiction;Gotham is a good place to live in.;neutral
-sentiment;and;He moved to Gotham last year, and he loved it there.;neutral;Gotham is a good place to live in.;neutral
-sentiment;negation;He moved to Gotham last year, but he loved it there.;entailment;Gotham is not a good place to live in.;contradiction
-sentiment;reversed;He moved to Gotham last year, but he hated it there.;neutral;Gotham is a good place to live in.;contradiction
-sentiment;;I clicked on a documentary but it was interesting.;contradiction;I thought this documentary was going to be interesting.;neutral
-sentiment;and;I clicked on a documentary and it was interesting.;neutral;I thought this documentary was going to be interesting.;neutral
-sentiment;negation;I clicked on a documentary but it was interesting.;entailment;I didn't think this documentary was going to be interesting.;entailment
+sentiment;;I started this diet, but I felt great.;contradiction;This diet was supposed to make people feel great.;contradiction
+sentiment;and;I started this diet, and I felt great.;neutral;This diet was supposed to make people feel great.;neutral
+sentiment;negation;I started this diet, but I felt great.;entailment;This diet was not supposed to make people feel great.;contradiction
+sentiment;reversed;I started this diet, but I felt terrible.;entailment;This diet was supposed to make people feel great.;neutral
+sentiment;;I continued car racing, but it was fun.;contradiction;Car racing was expected to be fun.;neutral
+sentiment;and;I continued car racing, and it was fun.;neutral;Car racing was expected to be fun.;neutral
+sentiment;negation;I continued car racing, but it was fun.;entailment;Car racing was expected to be not fun.;contradiction
+sentiment;reversed;I continued car racing, but it was frustrating.;entailment;Car racing was expected to be fun.;neutral
+sentiment;;He moved to Gotham last year, but he loved it there.;contradiction;Gotham was a good place to live in.;neutral
+sentiment;and;He moved to Gotham last year, and he loved it there.;neutral;Gotham was a good place to live in.;neutral
+sentiment;negation;He moved to Gotham last year, but he loved it there.;entailment;Gotham was not a good place to live in.;contradiction
+sentiment;reversed;He moved to Gotham last year, but he hated it there.;neutral;Gotham was a good place to live in.;contradiction
+sentiment;;I clicked on a documentary but it was interesting.;contradiction;I thought this documentary was going to be interesting.;entailment
+sentiment;and;I clicked on a documentary and it was interesting.;neutral;I thought this documentary was going to be interesting.;entailment
+sentiment;negation;I clicked on a documentary but it was interesting.;entailment;I didn't think this documentary was going to be interesting.;contradiction
 sentiment;reversed;I clicked on a documentary but it was boring.;entailment;I thought this documentary was going to be interesting.;neutral
 world_knowledge;;It rained but I went to the beach.;contradiction;People like to go to the beach when it rains.;neutral
-world_knowledge;and;It rained and I went to the beach.;neutral;People like to go to the beach when it rains.;entailment
+world_knowledge;and;It rained and I went to the beach.;neutral;People like to go to the beach when it rains.;neutral
 world_knowledge;negation;It rained but I went to the beach.;entailment;People don't like to go to the beach when it rains.;contradiction
 world_knowledge;reversed;It rained but I stayed home.;neutral;People like to go to the beach when it rains.;contradiction
 world_knowledge;;The difference is small but important.;contradiction;Many small differences are important.;neutral
 world_knowledge;and;The difference is small and important.;neutral;Many small differences are important.;neutral
 world_knowledge;negation;The difference is small but important.;entailment;Not many small differences are important.;neutral
-world_knowledge;reversed;The difference is huge but important.;entailment;Many small differences are important.;contradiction
-world_knowledge;;I am full, but I want to eat.;contradiction;When people are full, they eat.;contradiction
+world_knowledge;reversed;The difference is huge but important.;entailment;Many small differences are important.;neutral
+world_knowledge;;I am full, but I want to eat.;contradiction;When people are full, they eat.;entailment
 world_knowledge;and;I am full, and I want to eat.;neutral;When people are full, they eat.;entailment
 world_knowledge;negation;I am full, but I want to eat.;entailment;When people are full, they don't eat.;contradiction
-world_knowledge;reversed;I am hungry, but I want to eat.;neutral;When people are full, they eat.;contradiction
+world_knowledge;reversed;I am hungry, but I want to eat.;neutral;When people are full, they eat.;entailment
 world_knowledge;;This ring is ugly, but well-made.;contradiction;Ugly rings are usually well made.;neutral
-world_knowledge;and;This ring is ugly, and well-made.;neutral;Ugly rings are usually well made.;neutral
+world_knowledge;and;This ring is ugly, and well-made.;neutral;Ugly rings are usually well made.;contradiction
 world_knowledge;negation;This ring is ugly, but well-made.;entailment;Ugly rings are usually not well made.;neutral
 world_knowledge;reversed;This ring is nice, but well-made.;neutral;Ugly rings are usually well made.;contradiction
 world_knowledge;;The economy is growing, but trading dwindled.;contradiction;Normally when an economy grows, its trading dwindles.;entailment
@@ -100,10 +100,10 @@ world_knowledge;;Contemporary furniture has a sophisticated but warm look.;contr
 world_knowledge;and;Contemporary furniture has a sophisticated and warm look.;neutral;A sophisticated look is also warm.;neutral
 world_knowledge;negation;Contemporary furniture has a sophisticated but warm look.;entailment;A sophisticated look is not also warm.;contradiction
 world_knowledge;reversed;Contemporary furniture has a sophisticated but cold look.;entailment;A sophisticated look is also warm.;contradiction
-world_knowledge;;It is 6:30 but it is dark.;contradiction;6:30 should be dark.;contradiction
+world_knowledge;;It is 6:30 but it is dark.;contradiction;6:30 should be dark.;entailment
 world_knowledge;and;It is 6:30 and it is dark.;neutral;6:30 should be dark.;contradiction
-world_knowledge;negation;It is 6:30 but it is dark.;entailment;6:30 should not be dark.;entailment
-world_knowledge;reversed;It is 6:30 but it is bright.;entailment;6:30 should be dark.;neutral
+world_knowledge;negation;It is 6:30 but it is dark.;entailment;6:30 should not be dark.;neutral
+world_knowledge;reversed;It is 6:30 but it is bright.;entailment;6:30 should be dark.;contradiction
 world_knowledge;;It is an autobiography, but some details are fabricated.;contradiction;Stories in autobiographies are fabricated.;entailment
 world_knowledge;and;It is an autobiography, and some details are fabricated.;neutral;Stories in autobiographies are fabricated.;entailment
 world_knowledge;negation;It is an autobiography, but some details are fabricated.;entailment;Stories in autobiographies are not fabricated.;contradiction
@@ -112,19 +112,19 @@ world_knowledge;;Maria is one of the Jones, but John loves her.;contradiction;Jo
 world_knowledge;and;Maria is one of the Jones, and John loves her.;neutral;John loves the Jones in general.;neutral
 world_knowledge;negation;Maria is one of the Jones, but John loves her.;entailment;John does not love the Jones in general.;contradiction
 world_knowledge;reversed;Maria is one of the Jones, but John hates her.;entailment;John loves the Jones in general.;contradiction
-world_knowledge;;Peter's father is 40 years old but looks young.;contradiction;40-year-olds should look young.;entailment
-world_knowledge;and;Peter's father is 40 years old and looks young.;neutral;40-year-olds should look young.;entailment
-world_knowledge;negation;Peter's father is 40 years old but looks young.;entailment;40-year-olds should not look young.;entailment
+world_knowledge;;Peter's father is 40 years old but looks young.;contradiction;40-year-olds should look young.;neutral
+world_knowledge;and;Peter's father is 40 years old and looks young.;neutral;40-year-olds should look young.;neutral
+world_knowledge;negation;Peter's father is 40 years old but looks young.;entailment;40-year-olds should not look young.;neutral
 world_knowledge;reversed;Peter's father is 40 years old but looks old.;entailment;40-year-olds should look young.;contradiction
 world_knowledge;;Chevrotains have a three-chambered stomach but are often referred to as ruminants.;contradiction;Most ruminants have three-chambered stomachs.;neutral
 world_knowledge;and;Chevrotains have a three-chambered stomach and are often referred to as ruminants.;entailment;Most ruminants have three-chambered stomachs.;neutral
-world_knowledge;negation;Chevrotains have a three-chambered stomach but are often referred to as ruminants.;entailment;Most ruminants don't have three-chambered stomachs.;neutral
-world_knowledge;reversed;Chevrotains do not have a three-chambered stomach but are often referred to as ruminants.;entailment;Most ruminants have three-chambered stomachs.;neutral
-noun_relation;;The internet post was edited, but people knew about the secret.;contradiction;The secret was added to the internet post.;contradiction
+world_knowledge;negation;Chevrotains have a three-chambered stomach but are often referred to as ruminants.;entailment;Most ruminants don't have three-chambered stomachs.;contradiction
+world_knowledge;reversed;Chevrotains do not have a three-chambered stomach but are often referred to as ruminants.;entailment;Most ruminants have three-chambered stomachs.;contradiction
+noun_relation;;The internet post was edited, but people knew about the secret.;contradiction;The secret was added to the internet post.;neutral
 noun_relation;and;The internet post was edited, and people knew about the secret.;entailment;The secret was added to the internet post.;entailment
 noun_relation;negation;The internet post was edited, but people knew about the secret.;entailment;The secret was not added to the internet post.;contradiction
-noun_relation;;Schedules changed, but dinner is at 7.;contradiction;Dinner changed.;entailment
-noun_relation;and;Schedules changed, and dinner is at 7.;entailment;Dinner changed.;entailment
+noun_relation;;Schedules changed, but dinner is at 7.;contradiction;Dinner changed.;neutral
+noun_relation;and;Schedules changed, and dinner is at 7.;entailment;Dinner changed.;neutral
 noun_relation;negation;Schedules changed, but dinner is at 7.;entailment;Dinner did not change.;contradiction
 noun_relation;;Arthur updated the guide book, but it remained a compact reference for readers.;contradiction;Arthur simplified the content of the guide book.;neutral
 noun_relation;and;Arthur updated the guide book, and it remained a compact reference for readers.;entailment;Arthur simplified the content of the guide book.;entailment
@@ -133,20 +133,20 @@ noun_relation;;The developer fixed the glitches in the game, but more hard copie
 noun_relation;and;The developer fixed the glitches in the game, and more hard copies were sold than the online version.;entailment;The glitches were fixed in the hard copies.;neutral
 noun_relation;negation;The developer fixed the glitches in the game, but more hard copies were sold than the online version.;entailment;The glitches were not fixed in the hard copies.;contradiction
 noun_relation;;The new material was mass produced, but plastic consumption doubled that year.;contradiction;The new material used plastic.;neutral
-noun_relation;and;The new material was mass produced, and plastic consumption doubled that year.;entailment;The new material used plastic.;entailment
+noun_relation;and;The new material was mass produced, and plastic consumption doubled that year.;entailment;The new material used plastic.;neutral
 noun_relation;negation;The new material was mass produced, but plastic consumption doubled that year.;entailment;The new material did not use plastic.;contradiction
 noun_relation;;The agency confirmed the news, but the actor was happy.;contradiction;The news was favorable to the actor.;neutral
 noun_relation;and;The agency confirmed the news, and the actor was happy.;entailment;The news was favorable to the actor.;neutral
 noun_relation;negation;The agency confirmed the news, but the actor was happy.;entailment;The news was unfavorable to the actor.;contradiction
 noun_relation;;Gavin is poor but he spends like Tom.;contradiction;Tom is also poor.;neutral
 noun_relation;and;Gavin is poor and he spends like Tom.;neutral;Tom is also poor.;neutral
-noun_relation;negation;Gavin is poor but he spends like Tom.;entailment;Tom is not poor.;neutral
+noun_relation;negation;Gavin is poor but he spends like Tom.;entailment;Tom is not poor.;contradiction
 noun_relation;;The driving test is hard, but what he worries is the parking part.;contradiction;The parking part is part of the driving test.;entailment
 noun_relation;and;The driving test is hard, and what he worries is the parking part.;entailment;The parking part is part of the driving test.;entailment
 noun_relation;negation;The driving test is hard, but what he worries is the parking part.;entailment;The parking part is not part of the driving test.;contradiction
 noun_relation;;The adaptation sticks to the original story, but is told at a brisk pace.;contradiction;The original story is told at a brisk pace.;contradiction
-noun_relation;and;The adaptation sticks to the original story, and is told at a brisk pace.;entailment;The original story is told at a brisk pace.;contradiction
-noun_relation;negation;The adaptation sticks to the original story, but is told at a brisk pace.;entailment;The original story is not told at a brisk pace.;entailment
-noun_relation;;She gets the dress, but she wants to go to the ball.;contradiction;The dress is suitable for the ball.;neutral
-noun_relation;and;She gets the dress, and she wants to go to the ball.;entailment;The dress is suitable for the ball.;neutral
-noun_relation;negation;She gets the dress, but she wants to go to the ball.;entailment;The dress is not suitable for the ball.;contradiction
+noun_relation;and;The adaptation sticks to the original story, and is told at a brisk pace.;entailment;The original story is told at a brisk pace.;entailment
+noun_relation;negation;The adaptation sticks to the original story, but is told at a brisk pace.;entailment;The original story is not told at a brisk pace.;contradiction
+noun_relation;;You can borrow this dress, but you are going to a formal occasion.;contradiction;The dress is suitable for the occasion.;neutral
+noun_relation;and;You can borrow this dress, and you are going to a formal occasion.;entailment;The dress is suitable for the occasion.;neutral
+noun_relation;negation;You can borrow this dress, but you are going to a formal occasion.;entailment;The dress is not suitable for the occasion.;contradiction
