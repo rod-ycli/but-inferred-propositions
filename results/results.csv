@@ -27,25 +27,25 @@ undone_action;;I was enrolled in a private school, but I broke several school ru
 undone_action;and;I was enrolled in a private school, and I broke several school rules.;entailment;I kept studying in this private school.;neutral
 undone_action;negation;I was enrolled in a private school, but I broke several school rules.;entailment;I did not keep studying in this private school.;neutral
 undone_action;temporal;I broke several school rules, but I was enrolled in a private school.;entailment;I kept studying in this private school.;entailment
-undone_action;;She told me to stay there in my room, but she left.;contradiction;I stayed there in my room.;contradiction
-undone_action;and;She told me to stay there in my room, and she left.;entailment;I stayed there in my room.;contradiction
-undone_action;negation;She told me to stay there in my room, but she left.;entailment;I did not stay there in my room.;entailment
-undone_action;temporal;She left, but she hold me to stay there in my room.;entailment;I stayed there in my room.;entailment
-undone_action;;I became a lawyer, but the work got tedious. ;contradiction;I continued to be a lawyer.;neutral
-undone_action;and;I became a lawyer, and the work got tedious. ;neutral;I continued to be a lawyer.;neutral
-undone_action;negation;I became a lawyer, but the work got tedious. ;entailment;I did not continue to be a lawyer.;neutral
-undone_action;temporal;The work got tedious, but I became a lawyer.;entailment;I continued to be a lawyer.;neutral
-undone_action;sentiment;I became a lawyer, but the work got interesting. ;entailment;I continued to be a lawyer.;neutral
+undone_action;;I was focusing on the exam, but the teacher wasn’t looking.;contradiction;I kept focusing on the exam.;entailment
+undone_action;and;I was focusing on the exam, and the teacher wasn’t looking.;entailment;I kept focusing on the exam.;entailment
+undone_action;negation;I was focusing on the exam, but the teacher wasn’t looking.;entailment;I did not keep focusing on the exam.;contradiction
+undone_action;temporal;The teacher wasn’t looking, but I was focusing on the exam.;entailment;I kept focusing on the exam.;entailment
+undone_action;;I became a lawyer, but the work was tedious. ;contradiction;I continued to be a lawyer.;neutral
+undone_action;and;I became a lawyer, and the work was tedious. ;neutral;I continued to be a lawyer.;neutral
+undone_action;negation;I became a lawyer, but the work was tedious. ;entailment;I did not continue to be a lawyer.;neutral
+undone_action;temporal;The work was tedious, but I became a lawyer.;entailment;I continued to be a lawyer.;neutral
+undone_action;sentiment;I became a lawyer, but the work was interesting. ;entailment;I continued to be a lawyer.;neutral
 undone_action;;I started this diet, but I felt terrible.;contradiction;I continued doing this diet.;neutral
 undone_action;and;I started this diet, and I felt terrible.;neutral;I continued doing this diet.;neutral
 undone_action;negation;I started this diet, but I felt terrible.;entailment;I did not continue doing this diet.;neutral
 undone_action;temporal;I felt terrible, but I started this diet.;entailment;I continued doing this diet.;neutral
 undone_action;sentiment;I started this diet, but I felt great.;neutral;I continued doing this diet.;neutral
-undone_action;;I continued car racing, but it was frustrating.;contradiction;I kept doing car racing.;neutral
-undone_action;and;I continued car racing, and it was frustrating.;neutral;I kept doing car racing.;neutral
-undone_action;negation;I continued car racing, but it was frustrating.;entailment;I did not keep doing car racing.;contradiction
-undone_action;temporal;It was frustrating, but I continued car racing.;entailment;I kept doing car racing.;neutral
-undone_action;sentiment;I continued car racing, but it was fun.;entailment;I kept doing car racing.;neutral
+undone_action;;I practiced car racing, but it was frustrating.;contradiction;I kept doing car racing.;neutral
+undone_action;and;I practiced car racing, and it was frustrating.;neutral;I kept doing car racing.;neutral
+undone_action;negation;I practiced car racing, but it was frustrating.;entailment;I did not keep doing car racing.;neutral
+undone_action;temporal;It was frustrating, but I practiced car racing.;entailment;I kept doing car racing.;neutral
+undone_action;sentiment;I practiced car racing, but it was fun.;entailment;I kept doing car racing.;neutral
 undone_action;;He moved to Gotham last year, but he hated it there.;contradiction;He kept living in Gotham.;contradiction
 undone_action;and;He moved to Gotham last year, and he hated it there.;entailment;He kept living in Gotham.;contradiction
 undone_action;negation;He moved to Gotham last year, but he hated it there.;entailment;He did not keep living in Gotham.;neutral
@@ -56,14 +56,14 @@ undone_action;and;I clicked on a documentary and it was boring.;entailment;I fin
 undone_action;negation;I clicked on a documentary but it was boring.;entailment;I did not finish watching the whole documentary.;neutral
 undone_action;temporal;It was boring but I clicked on a documentary.;entailment;I finished watching the whole documentary.;contradiction
 undone_action;sentiment;I clicked on a documentary but it was interesting.;entailment;I finished watching the whole documentary.;neutral
-sentiment;;I became a lawyer, but the work got interesting. ;contradiction;Becoming a lawyer had always interested me.;neutral
-sentiment;and;I became a lawyer, and the work got interesting. ;neutral;Becoming a lawyer had always interested me.;neutral
-sentiment;negation;I became a lawyer, but the work got interesting. ;entailment;Becoming a lawyer had never interested me.;contradiction
-sentiment;reversed;I became a lawyer, but the work got tedious. ;neutral;Becoming a lawyer had always interested me.;neutral
+sentiment;;I became a lawyer, but the work was interesting. ;contradiction;I thought being a lawyer would be interesting.;neutral
+sentiment;and;I became a lawyer, and the work was interesting. ;neutral;I thought being a lawyer would be interesting.;neutral
+sentiment;negation;I became a lawyer, but the work was interesting. ;entailment;I did not think being a lawyer would be interesting.;contradiction
+sentiment;reversed;I became a lawyer, but the work was tedious. ;neutral;I thought being a lawyer would be interesting.;neutral
 sentiment;;I started this diet, but I felt great.;contradiction;This diet was supposed to make people feel great.;contradiction
 sentiment;and;I started this diet, and I felt great.;neutral;This diet was supposed to make people feel great.;neutral
 sentiment;negation;I started this diet, but I felt great.;entailment;This diet was not supposed to make people feel great.;contradiction
-sentiment;reversed;I started this diet, but I felt terrible.;entailment;This diet was supposed to make people feel great.;neutral
+sentiment;reversed;I started this diet, but I felt terrible.;neutral;This diet was supposed to make people feel great.;neutral
 sentiment;;I continued car racing, but it was fun.;contradiction;Car racing was expected to be fun.;neutral
 sentiment;and;I continued car racing, and it was fun.;neutral;Car racing was expected to be fun.;neutral
 sentiment;negation;I continued car racing, but it was fun.;entailment;Car racing was expected to be not fun.;contradiction
@@ -88,10 +88,10 @@ world_knowledge;;I am full, but I want to eat.;contradiction;When people are ful
 world_knowledge;and;I am full, and I want to eat.;neutral;When people are full, they eat.;entailment
 world_knowledge;negation;I am full, but I want to eat.;entailment;When people are full, they don't eat.;contradiction
 world_knowledge;reversed;I am hungry, but I want to eat.;neutral;When people are full, they eat.;entailment
-world_knowledge;;This ring is ugly, but well-made.;contradiction;Ugly rings are usually well made.;neutral
-world_knowledge;and;This ring is ugly, and well-made.;neutral;Ugly rings are usually well made.;contradiction
-world_knowledge;negation;This ring is ugly, but well-made.;entailment;Ugly rings are usually not well made.;neutral
-world_knowledge;reversed;This ring is nice, but well-made.;neutral;Ugly rings are usually well made.;contradiction
+world_knowledge;;This ring is cheap, but well-made.;contradiction;Cheap rings are usually well made.;neutral
+world_knowledge;and;This ring is cheap, and well-made.;neutral;Cheap rings are usually well made.;neutral
+world_knowledge;negation;This ring is cheap, but well-made.;entailment;Cheap rings are usually not well made.;neutral
+world_knowledge;reversed;This ring is expensive, but well-made.;neutral;Cheap rings are usually well made.;contradiction
 world_knowledge;;The economy is growing, but trading dwindled.;contradiction;Normally when an economy grows, its trading dwindles.;entailment
 world_knowledge;and;The economy is growing, and trading dwindled.;neutral;Normally when an economy grows, its trading dwindles.;entailment
 world_knowledge;negation;The economy is growing, but trading dwindled.;entailment;Normally when an economy grows, its trading doesn't dwindle.;neutral
@@ -100,10 +100,10 @@ world_knowledge;;Contemporary furniture has a sophisticated but warm look.;contr
 world_knowledge;and;Contemporary furniture has a sophisticated and warm look.;neutral;A sophisticated look is also warm.;neutral
 world_knowledge;negation;Contemporary furniture has a sophisticated but warm look.;entailment;A sophisticated look is not also warm.;contradiction
 world_knowledge;reversed;Contemporary furniture has a sophisticated but cold look.;entailment;A sophisticated look is also warm.;contradiction
-world_knowledge;;It is 6:30 but it is dark.;contradiction;6:30 should be dark.;entailment
-world_knowledge;and;It is 6:30 and it is dark.;neutral;6:30 should be dark.;contradiction
-world_knowledge;negation;It is 6:30 but it is dark.;entailment;6:30 should not be dark.;neutral
-world_knowledge;reversed;It is 6:30 but it is bright.;entailment;6:30 should be dark.;contradiction
+world_knowledge;;It is 2 pm but it is dark.;contradiction;2 pm should be dark.;entailment
+world_knowledge;and;It is 2 pm and it is dark.;neutral;2 pm should be dark.;contradiction
+world_knowledge;negation;It is 2 pm but it is dark.;entailment;2 pm should not be dark.;neutral
+world_knowledge;reversed;It is 2 pm but it is bright.;entailment;2 pm should be dark.;contradiction
 world_knowledge;;It is an autobiography, but some details are fabricated.;contradiction;Stories in autobiographies are fabricated.;entailment
 world_knowledge;and;It is an autobiography, and some details are fabricated.;neutral;Stories in autobiographies are fabricated.;entailment
 world_knowledge;negation;It is an autobiography, but some details are fabricated.;entailment;Stories in autobiographies are not fabricated.;contradiction
@@ -112,10 +112,10 @@ world_knowledge;;Maria is one of the Jones, but John loves her.;contradiction;Jo
 world_knowledge;and;Maria is one of the Jones, and John loves her.;neutral;John loves the Jones in general.;neutral
 world_knowledge;negation;Maria is one of the Jones, but John loves her.;entailment;John does not love the Jones in general.;contradiction
 world_knowledge;reversed;Maria is one of the Jones, but John hates her.;entailment;John loves the Jones in general.;contradiction
-world_knowledge;;Peter's father is 40 years old but looks young.;contradiction;40-year-olds should look young.;neutral
-world_knowledge;and;Peter's father is 40 years old and looks young.;neutral;40-year-olds should look young.;neutral
-world_knowledge;negation;Peter's father is 40 years old but looks young.;entailment;40-year-olds should not look young.;neutral
-world_knowledge;reversed;Peter's father is 40 years old but looks old.;entailment;40-year-olds should look young.;contradiction
+world_knowledge;;Peter's father is 90 years old but looks young.;contradiction;90-year-olds should look young.;neutral
+world_knowledge;and;Peter's father is 90 years old and looks young.;neutral;90-year-olds should look young.;neutral
+world_knowledge;negation;Peter's father is 90 years old but looks young.;entailment;90-year-olds should not look young.;neutral
+world_knowledge;reversed;Peter's father is 90 years old but looks old.;entailment;90-year-olds should look young.;contradiction
 world_knowledge;;Chevrotains have a three-chambered stomach but are often referred to as ruminants.;contradiction;Most ruminants have three-chambered stomachs.;neutral
 world_knowledge;and;Chevrotains have a three-chambered stomach and are often referred to as ruminants.;entailment;Most ruminants have three-chambered stomachs.;neutral
 world_knowledge;negation;Chevrotains have a three-chambered stomach but are often referred to as ruminants.;entailment;Most ruminants don't have three-chambered stomachs.;contradiction
@@ -123,11 +123,11 @@ world_knowledge;reversed;Chevrotains do not have a three-chambered stomach but a
 noun_relation;;The internet post was edited, but people knew about the secret.;contradiction;The secret was added to the internet post.;neutral
 noun_relation;and;The internet post was edited, and people knew about the secret.;entailment;The secret was added to the internet post.;entailment
 noun_relation;negation;The internet post was edited, but people knew about the secret.;entailment;The secret was not added to the internet post.;contradiction
-noun_relation;;Schedules changed, but dinner is at 7.;contradiction;Dinner changed.;neutral
-noun_relation;and;Schedules changed, and dinner is at 7.;entailment;Dinner changed.;neutral
-noun_relation;negation;Schedules changed, but dinner is at 7.;entailment;Dinner did not change.;contradiction
+noun_relation;;Schedules changed, but dinner is at 7 o’clock.;contradiction;Dinner time changed.;neutral
+noun_relation;and;Schedules changed, and dinner is at 7 o’clock.;entailment;Dinner time changed.;neutral
+noun_relation;negation;Schedules changed, but dinner is at 7 o’clock.;entailment;Dinner time did not change.;contradiction
 noun_relation;;Arthur updated the guide book, but it remained a compact reference for readers.;contradiction;Arthur simplified the content of the guide book.;neutral
-noun_relation;and;Arthur updated the guide book, and it remained a compact reference for readers.;entailment;Arthur simplified the content of the guide book.;entailment
+noun_relation;and;Arthur updated the guide book, and it remained a compact reference for readers.;neutral;Arthur simplified the content of the guide book.;entailment
 noun_relation;negation;Arthur updated the guide book, but it remained a compact reference for readers.;entailment;Arthur did not simplify the content of the guide book.;neutral
 noun_relation;;The developer fixed the glitches in the game, but more hard copies were sold than the online version.;contradiction;The glitches were fixed in the hard copies.;neutral
 noun_relation;and;The developer fixed the glitches in the game, and more hard copies were sold than the online version.;entailment;The glitches were fixed in the hard copies.;neutral
@@ -141,9 +141,9 @@ noun_relation;negation;The agency confirmed the news, but the actor was happy.;e
 noun_relation;;Gavin is poor but he spends like Tom.;contradiction;Tom is also poor.;neutral
 noun_relation;and;Gavin is poor and he spends like Tom.;neutral;Tom is also poor.;neutral
 noun_relation;negation;Gavin is poor but he spends like Tom.;entailment;Tom is not poor.;contradiction
-noun_relation;;The driving test is hard, but what he worries is the parking part.;contradiction;The parking part is part of the driving test.;entailment
-noun_relation;and;The driving test is hard, and what he worries is the parking part.;entailment;The parking part is part of the driving test.;entailment
-noun_relation;negation;The driving test is hard, but what he worries is the parking part.;entailment;The parking part is not part of the driving test.;contradiction
+noun_relation;;The driving test is hard, but what he worries about is the parking part.;contradiction;The parking part is part of the driving test.;entailment
+noun_relation;and;The driving test is hard, and what he worries about is the parking part.;entailment;The parking part is part of the driving test.;entailment
+noun_relation;negation;The driving test is hard, but what he worries about is the parking part.;entailment;The parking part is not part of the driving test.;contradiction
 noun_relation;;The adaptation sticks to the original story, but is told at a brisk pace.;contradiction;The original story is told at a brisk pace.;contradiction
 noun_relation;and;The adaptation sticks to the original story, and is told at a brisk pace.;entailment;The original story is told at a brisk pace.;entailment
 noun_relation;negation;The adaptation sticks to the original story, but is told at a brisk pace.;entailment;The original story is not told at a brisk pace.;contradiction
