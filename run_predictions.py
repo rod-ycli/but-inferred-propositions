@@ -154,19 +154,19 @@ for row in content[1:]:
 
 # Plotting the bar chart
 labels = ['neutral', 'entailment', 'contradiction']
-exp_distri = [exp_neu_count, exp_ent_count, exp_con_count]
 pred_count = [neutral_count, entail_count, contra_count]
+exp_distri = [exp_neu_count, exp_ent_count, exp_con_count]
 
 x = np.arange(len(labels))  # the label locations
 width = 0.35  # the width of the bars
 
 fig, ax = plt.subplots()
-rects1 = ax.bar(x - width/2, exp_distri, width, label='Expected labels')
-rects2 = ax.bar(x + width/2, pred_count, width, label='Model predictions')
+rects1 = ax.bar(x - width/2, pred_count, width, label='Model predictions')
+rects2 = ax.bar(x + width/2, exp_distri, width, label='Expected labels')
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Number')
-ax.set_title('Distribution of expected labels and model predictions')
+ax.set_title('Distribution of model predictions and expected labels')
 ax.set_xticks(x)
 ax.set_xticklabels(labels)
 ax.legend()
