@@ -3,6 +3,8 @@ import time
 import csv
 import pandas as pd
 from collections import defaultdict
+import matplotlib.pyplot as plt
+import numpy as np
 
 # Loading the dataset
 infile = "but_inferred_propositions.csv"
@@ -125,3 +127,53 @@ df = pd.DataFrame(failure_rate).T.astype(float).round(2).fillna('/').to_string()
 print("Failure rate compared with base examples")
 print("base: expected 'contradiction'; other: expected different")
 print(df)
+
+# Counting the distribution of predictions
+neutral_count = 0
+entail_count = 0
+contra_count = 0
+for row in content[1:]:
+    if row[-1] == "neutral":
+        neutral_count += 1
+    elif row[-1] == "entailment":
+        entail_count += 1
+    elif row[-1] == "contradiction":
+        contra_count += 1
+
+# Counting the distribution of expected labels
+exp_neu_count = 0
+exp_ent_count = 0
+exp_con_count = 0
+for row in content[1:]:
+    if row[3] == "neutral":
+        exp_neu_count += 1
+    if row[3] == "entailment":
+        exp_ent_count += 1
+    if row[3] == "contradiction":
+        exp_con_count += 1
+
+# Plotting the bar chart
+labels = ['neutral', 'entailment', 'contradiction']
+exp_distri = [exp_neu_count, exp_ent_count, exp_con_count]
+pred_count = [neutral_count, entail_count, contra_count]
+
+x = np.arange(len(labels))  # the label locations
+width = 0.35  # the width of the bars
+
+fig, ax = plt.subplots()
+rects1 = ax.bar(x - width/2, exp_distri, width, label='Expected labels')
+rects2 = ax.bar(x + width/2, pred_count, width, label='Model predictions')
+
+# Add some text for labels, title and custom x-axis tick labels, etc.
+ax.set_ylabel('Number')
+ax.set_title('Distribution of expected labels and model predictions')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+ax.legend()
+
+ax.bar_label(rects1, padding=3)
+ax.bar_label(rects2, padding=3)
+
+fig.tight_layout()
+
+plt.show()
